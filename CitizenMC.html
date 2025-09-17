@@ -173,6 +173,115 @@ th{
     background-color: #ffe082;
     transition: 0.3s;
   }
+
+
+  .container11 {
+	width:100%;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto;
+	max-width:800px
+}
+/* Basic appearance stuff ends here */
+
+/* Parallax Horizontal Scroller - by Bree Dulmage, 2020 */
+#proparallax {
+	  display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 4/3; /* maintains proportional height, change as needed */
+    border: 10px solid black;
+    box-shadow: 0px 8px 10px 8px grey;
+}	
+
+#proparallax img {
+	   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;   /* scale to container */
+    height: 100%;  /* scale to container */
+    object-fit: contain;
+}
+
+@keyframes parallax_one {
+  0% { left: 0; width: 100%; opacity: 1; }
+  27.77% { left: 0; width: 100%; }
+  27.78% { left: 0; right: 100%; width: 100%; }
+  33.33% { left: 0; width: 0; opacity: 1; }
+  33.34% { opacity: 0; }
+  94.44% { left: 100%; width: 0; opacity: 1; }
+  100% { left: 0; width: 100%; opacity: 1; }
+}
+
+@keyframes parallax_two {
+  0% { opacity: 0; }
+  27.77% { left: 0; opacity: 0; }
+  27.78% { left: 100%; width: 0; opacity: 1; }
+  33.33% { left: 0; width: 100%; }
+  61.10% { left: 0; width: 100%; }
+  61.11% { left: 0; right: 100%; width: 100%; }
+  66.67% { left: 0; width: 0; opacity: 1; }
+  66.68% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes parallax_three {
+  0% { opacity: 0; }
+  61.10% { opacity: 0; }
+  61.11% { left: 100%; width: 0; opacity: 1; }
+  66.67% { left: 0; width: 100%; }
+  94.43% { left: 0; width: 100%; }
+  94.44% { left: 0; right: 100%; width: 100%; }
+  100% { left: 0; width: 0; opacity: 1; }
+}
+
+@keyframes parallax_four {
+  0% { opacity: 0; }
+  94.43% { opacity: 0; }
+  94.44% { left: 100%; width: 0; opacity: 1; }
+  100% { left: 0; width: 100%; opacity: 1; }
+}
+
+
+#proparallax img.one{
+	animation-name: parallax_one; /* controls img.one movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+#proparallax img.two {
+	animation-name: parallax_two; /* controls img.two movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+#proparallax img.three {
+	animation-name: parallax_three; /* controls img.three movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+#proparallax img.four {
+	animation-name: parallax_three; /* controls img.three movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
 </style>
 
 <table>
@@ -194,9 +303,14 @@ th{
   </tbody>
 </table>
 
-
-
-    
+<div class="container11 mt-5 p-2">
+	<div id="proparallax">
+		<img class="one" src="img/citi1.png" /> 
+		<img class="two" src="img/citi2.png" />
+		<img class="three" src="img/citi3.png" />
+        <img class="four" src="img/citi5.png" />
+	</div>
+</div>
 
 
     <!-- Footer Start -->
