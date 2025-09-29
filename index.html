@@ -104,70 +104,107 @@
         </div>
     </nav>
     <!-- Navbar End -->
+<style>/* Overlay background for text */
+.owl-carousel-inner .col-12.col-lg-5 {
+    background: rgba(0, 0, 0, 0.45); /* dark transparent background */
+    padding: 20px 25px;
+    border-radius: 8px;
+    max-width: 500px; /* keeps text nicely constrained */
+}
 
+/* Improve text visibility */
+.owl-carousel-inner h4 {
+    color: #fff !important; /* force white text for contrast */
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8); /* subtle shadow */
+    line-height: 1.4;
+    font-weight: 600;
+}
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/pharmacy-06.png'>">
-                <img class="img-fluid" src="img/pharmacy-06.png" alt="">
-                <div class="owl-carousel-inner">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-success animated slideInDown">Pharmaceuticals</h1>
-                                <!-- <p class="fs-5 fw-medium text-success mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p> -->
-                                <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">See More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/pharmacy-22.jpg'>">
-                <img class="img-fluid" src="img/pharmacy-22.jpg" alt="">
-                <div class="owl-carousel-inner">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-success animated slideInDown">Medical Consumables</h1>
-                                <!-- <p class="fs-5 fw-medium text-success mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p> -->
-                                <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">See More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/fmcgg4.png'>">
-                <img class="img-fluid" src="img/fmcgg4.png" alt="">
-                <div class="owl-carousel-inner">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8"> 
-                                <h1 class="display-2 text-success animated slideInDown">Fast-Moving Consumer Goods</h1>
-                                <!-- <p class="fs-5 fw-medium text-success mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p> -->
-                                <a href="FMCG.html" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">See More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                  <div class="owl-carousel-item position-relative" data-dot="<img src='img/cosmetic3.webp'>">
-                <img class="img-fluid" src="img/cosmetic3.webp" alt="">
-                <div class="owl-carousel-inner">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-success animated slideInDown">Cosmetics</h1>
-                                <!-- <p class="fs-5 fw-medium text-success mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p> -->
-                                <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">See More</a>
-                            </div>
+/* Button styling for consistency */
+.owl-carousel-inner .btn {
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+</style>
+
+ <!-- Carousel Start -->
+<div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="owl-carousel header-carousel position-relative">
+
+        <!-- Pharmaceuticals -->
+        <div class="owl-carousel-item position-relative" data-dot="<img src='img/pharmacy-06.png'>">
+            <img class="img-fluid" src="img/pharmacy-06.png" alt="">
+            <div class="owl-carousel-inner">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-12 col-lg-5">
+                            <h4 class="text-success animated slideInDown">
+                                Supplying a broad range of trusted pharmaceutical products for healthcare providers
+                            </h4>
+                            <a href="pharma.html" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">See More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+ 
+   
+
+        <!-- Medical Consumables -->
+        <div class="owl-carousel-item position-relative" data-dot="<img src='img/1112.webp'>">
+            <img class="img-fluid" src="img/1112.webp" alt="">
+            <div class="owl-carousel-inner">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-12 col-lg-5">
+                            <h4 class="text-success animated slideInDown">
+                                Delivering essential consumables to support efficient medical practice
+                            </h4>
+                            <a href="MedicalConsumables.html" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FMCG -->
+        <div class="owl-carousel-item position-relative" data-dot="<img src='img/1111.png'>">
+            <img class="img-fluid" src="img/1111.png" alt="">
+            <div class="owl-carousel-inner">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-12 col-lg-5">
+                            <h4 class="text-success animated slideInDown">
+                                Providing fast-moving consumer goods to meet market and business demands
+                            </h4>
+                            <a href="FMCG.html" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cosmetics -->
+        <div class="owl-carousel-item position-relative" data-dot="<img src='img/1113.webp'>">
+            <img class="img-fluid" src="img/1113.webp" alt="">
+            <div class="owl-carousel-inner">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-12 col-lg-5">
+                            <h4 class="text-success animated slideInDown">
+                                Distributing quality cosmetic products to serve diverse customer needs
+                            </h4>
+                            <a href="cosmatic.html" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <!-- Carousel End -->
+</div>
+<!-- Carousel End -->
+
 
 
     <!-- Feature Start -->
@@ -201,7 +238,7 @@
                         </div>
                         <!-- <h1 class="mb-0" data-toggle="counter-up">3123</h1> -->
                     </div>
-                    <h5 class="mb-3 d-flex justify-content-center">SCH Approved</h5>
+                    <h5 class="mb-3 d-flex justify-content-center">MOPH Approved</h5>
                     <!-- <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span> -->
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
@@ -308,7 +345,7 @@
                             <!-- <div class="service-icon">
                                 <i class="fa fa-lightbulb fa-3x"></i>
                             </div> -->
-                            <h4 class="mb-3">Cosmatic</h4>
+                            <h4 class="mb-3">Cosmetics</h4>
                             <!-- <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p> -->
                             <a class="small fw-medium" href="cosmatic.html">See More<i class="fa fa-arrow-right ms-2"></i></a>
                         </div>
